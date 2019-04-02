@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8821130411451d343a1488e2a9db134e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - mBodySourceManager: {instanceID: 0}
+  - mJointObject: {fileID: 276156306297737322, guid: 4473dc38638e23c4bad7b93472d8fb73,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
