@@ -13,9 +13,12 @@ public class Hand : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.gameObject.tag);
+        //Debug.Log(collision.gameObject.tag);
         if (!collision.gameObject.CompareTag("Bubble"))
             return;
-        collision.gameObject.SetActive(false);
+
+        Bubble bubble = collision.gameObject.GetComponent<Bubble>();
+        StartCoroutine(bubble.Pop());
+        Destroy(bubble.gameObject, 1.0f);
     }
 }

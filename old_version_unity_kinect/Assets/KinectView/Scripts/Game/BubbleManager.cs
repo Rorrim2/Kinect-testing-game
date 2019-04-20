@@ -29,7 +29,7 @@ public class BubbleManager : MonoBehaviour {
         Gizmos.DrawSphere(Camera.main.ScreenToWorldPoint(new Vector3(Camera.main.pixelWidth, Camera.main.pixelHeight / 2, Camera.main.farClipPlane)), 0.5f);
     }
 
-    public Vector3 GetPlanePosiotion()
+    public Vector3 GetPlanePosition()
     {
         float targetX = Random.Range(mBottomLeft.x, mTopRight.x);
         float targetY = Random.Range(mBottomLeft.y, mTopRight.y);
@@ -42,7 +42,7 @@ public class BubbleManager : MonoBehaviour {
         while(mAllBubbles.Count < 20)
         {
             //create and add
-            GameObject newBubbleObject = Instantiate(mBubblePrefab, GetPlanePosiotion(), Quaternion.identity, transform);
+            GameObject newBubbleObject = Instantiate(mBubblePrefab, GetPlanePosition(), Quaternion.identity, transform);
             Bubble newBubble = newBubbleObject.GetComponent<Bubble>();
 
             //Setup bubble
